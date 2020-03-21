@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <h2>IN REAL TIME</h2>
+    <div class="weather">
+        <div class="location">
+            <div id="city"></div>
+            <div id="country"></div>
+        </div>
+        <div class="temperature">
+            <div id="temperature-current"></div>
+            <div id="temperature-max"></div>
+            <div id="temperature-min"></div>
+        </div>
+        <div class="extra-info">
+            <div id="humidity"></div>
+            <div id="wind"></div>
+            <div id="pressure"></div>
+        </div>
+        <form>
+            <div class="input-city">
+                <label for="input-city">CITY</label>
+                <input type="text" id="input-city" placeholder="Your city here. Ej: London">
+            </div>
+            <div class="input-country">
+                <label for="input-country">COUNTRY</label>
+                <input type="text" id="input-country" placeholder="Your country here. Ej: UK">
+            </div>
+            <input type="submit" value="CONSULT">
+        </form>
+    </div>
+</body>
+</html>
