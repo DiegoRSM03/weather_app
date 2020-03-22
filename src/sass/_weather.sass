@@ -11,6 +11,36 @@
     margin: 3rem auto
     padding: 3.5rem
 
+    .location
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        color: $WHITE
+
+        #city
+            font-size: 3rem
+            font-weight: bolder
+        #country
+            font-size: 1.5rem
+            font-weight: lighter
+
+    .info
+        display: grid
+        grid-template-columns: repeat(1fr, 2)
+        grid-template-rows: 1fr
+
+        h3
+            color: $WHITE
+            margin-top: 2rem
+
+        
+        .temperature
+            display: flex
+            align-items: center
+            justify-content: center
+
+        .extra-info
+
     form
         width: 100%
         display: flex

@@ -12,7 +12,16 @@ export class UI {
     }
 
     render (weather) {
+        this.city.innerHTML = weather.name;
+        this.country.innerHTML = weather.sys.country;
 
+        this.tempCurrent.innerHTML = 'Current: ' + weather.main.temp;
+        this.tempMax.innerHTML = 'Maximum: ' + weather.main.temp_max;
+        this.tempMin.innerHTML = 'Minimum: ' + weather.main.temp_min;
+
+        this.humidity.innerHTML = 'Humidity: ' + weather.main.humidity;
+        this.wind.innerHTML = 'Wind Speed: ' + weather.wind.speed;
+        this.pressure.innerHTML = 'Pressure: ' + weather.main.pressure;
     }
-    
+
 }
