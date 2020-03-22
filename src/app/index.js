@@ -8,9 +8,18 @@ const ui = new UI();
 
 async function fetchWeather () {
     const weatherJson =  await weather.getWeather();
-
-    console.log(weatherJson);
     ui.render(weatherJson);
 }
 
-document.addEventListener('DOMContentLoaded', fetchWeather)
+document.getElementById('consult').addEventListener('click', (e) => {
+    let city = document.getElementById('input-city').value;
+    let country = document.getElementById('input-country').value;
+
+    weather.setWeather(city, country);
+    fetchWeather();
+    console.log(`${city},${country}`);
+
+    e.preventDefault();
+});
+
+document.addEventListener('DOMContentLoaded', fetchWeather);

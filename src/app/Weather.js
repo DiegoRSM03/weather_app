@@ -13,8 +13,9 @@ export class Weather {
         return data;
     }
 
-    setWeather () {
-
+    setWeather (city, country) {
+        this.city = city;
+        this.country = country;
     }
 
 }
